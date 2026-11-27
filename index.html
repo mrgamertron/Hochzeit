@@ -1,4 +1,24 @@
-<!doctype html><html lang="de"><head><title>Annika &amp; Nick</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="de"><head><title>Annika &amp; Nick</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"><link rel="stylesheet" href="style.css"></head><body><div id="password-screen">
+  <div class="password-box">
+    <h1>Annika &amp; Nick</h1>
+    <p>Bitte gebt das Passwort aus der Einladung ein.</p>
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Passwort"
+      onkeydown="if(event.key==='Enter') checkPassword()"
+    >
+
+    <button onclick="checkPassword()">
+      Website öffnen
+    </button>
+
+    <p id="error"></p>
+  </div>
+</div>
+
+<div id="website-content" style="display:none;">
 <nav><a href="#home">Home</a><a href="#willkommen">Willkommen</a><a href="#bilder">Galerie</a><a href="#wedding">Wedding</a><a href="#anreise">Getting there</a><a href="#registry">Registry</a><a href="rsvp.html">RSVP</a></nav>
 <section class="hero" id="home">
 
@@ -23,4 +43,28 @@
 <section class="dark" id="registry" data-bg="registry"><div class="glass"><h2 style="font-size:1.8rem">Weitere Informationen</h2><h3>Geschenke</h3><p>Falls ihr noch nicht sicher seid was ihr uns schenken wollt, würden wir uns auch sehr über Geldgeschenke freuen. Für uns geht es direkt im Anschluss nach der Hochzeit in die Flitterwochen nach Sardinien (Hotel &amp; Camper). Darüber hinaus wollen wir uns in den nächsten Jahren den Traum eines Eigenheims erfüllen und auch da hilft Geld immer. Falls ihr spezielle Fragen haben solltet meldet euch gerne bei unseren Trauzeugen.<br>Wir freuen uns echt sehr auf Euch!</p><h3>Dresscode</h3><p>Für unsere Hochzeit wünschen wir uns einen modernen, eleganten und festlichen Dresscode. Ihr seid eingeladen, ein schickes Sakko und ein Hemd (gerne auch mit Fliege) zu tragen, oder auch stilvolle Kleider. Abendkleider sind nicht erforderlich; auch sommerliche Kleider sind willkommen.</p><h3>Weiteres</h3><p>Bitte keine Bilder während der Trauung, wir haben einen Fotografen, gerne jedoch beim Abendprogramm.<br>Wir freuen uns echt sehr auf Euch!</p></div></section>
 <section class="dark" id="kontakt" data-bg="trauzeugen"><h2>Unsere Trauzeugen</h2><p class="txt">Falls ihr Ideen haben solltet, um unseren Tag zu verschönern meldet euch gerne bei unseren Trauzeugen Nele &amp; Florian.</p><div class="zeugen"><div class="card"><div class="ph" data-bg="nele"></div><div><small>Trauzeugin von Annika</small><h3>Nele Werner</h3><p>Coole Socke</p><a href="https://wa.me/4915258408316">WhatsApp</a><a href="mailto:nele.werner@gmx.de">E-Mail</a></div></div><div class="card"><div class="ph" data-bg="florian"></div><div><small>Trauzeuge von Nick</small><h3>Florian Seebacher</h3><p>Eigl ganz Nett</p><a href="https://wa.me/491725152101">WhatsApp</a><a href="mailto:florian.seebacher@hotmail.de">E-Mail</a></div></div></div></section>
 <section class="gold" data-bg="abschluss"><p class="sub" style="color:#2a2f3a">Wir freuen uns riesig, diesen Tag mit euch zu feiern</p><h2>Wir freuen uns<br>auf Euch!</h2><a class="btn" href="rsvp.html">Anmelden</a></section>
-<p class="tag">#ANNIKA&amp;NICK #DaCurls</p><script src="config.js"></script><script src="main.js"></script></body></html>
+<p class="tag">#ANNIKA&amp;NICK #DaCurls</p><script src="config.js"></script><script src="main.js"></script></div>
+
+<script>
+const CORRECT_PASSWORD = "DaCurls2027";
+
+function checkPassword() {
+  const entered = document.getElementById("password").value;
+
+  if (entered === CORRECT_PASSWORD) {
+    sessionStorage.setItem("hochzeit_access", "granted");
+    document.getElementById("password-screen").style.display = "none";
+    document.getElementById("website-content").style.display = "block";
+  } else {
+    document.getElementById("error").textContent =
+      "Das Passwort ist leider nicht korrekt.";
+  }
+}
+
+window.onload = () => {
+  if (sessionStorage.getItem("hochzeit_access") === "granted") {
+    document.getElementById("password-screen").style.display = "none";
+    document.getElementById("website-content").style.display = "block";
+  }
+};
+</script></body></html>
