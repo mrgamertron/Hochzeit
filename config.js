@@ -22,8 +22,8 @@ window.CONFIG = {
     abschluss:    { bild: 'images/fuesse.jpg',      abdunkeln: 0 },    // gelbes Banner unten
     rsvp:         { bild: '',                       abdunkeln: 0 },    // Seite "Zeit und Ort"
     danke:        { bild: '',                       abdunkeln: 0 },    // Dankeseite
-    nele:         { bild: 'images/nele.jpeg' },                      // Foto Trauzeugin
-    florian:      { bild: 'images/flo.jpeg' }                      // Foto Trauzeuge
+    nele:         { bild: 'images/Nele.jpeg' },                      // Foto Trauzeugin
+    florian:      { bild: 'images/Flo.jpeg' }                      // Foto Trauzeuge
   },
 
   // Bildergalerie: beliebig viele Einträge, Reihenfolge = Reihenfolge auf der Seite.
