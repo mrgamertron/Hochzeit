@@ -30,7 +30,6 @@ window.CONFIG = {
   // Einfach eine Zeile kopieren/löschen. "text" ist die Bildbeschreibung (für Screenreader).
   galerie: [
   { bild: 'images/Canada.jpeg',               text: 'Annika und Nick in Kanada' },
-  { bild: 'images/GolfLounge.jpg',            text: 'Golf Lounge' },
   { bild: 'images/Ostsee.jpg',                text: 'Ostsee' },
   { bild: 'images/Schottland.jpg',            text: 'Schottland' },
   { bild: 'images/Teneriffa.jpg',             text: 'Teneriffa' },
