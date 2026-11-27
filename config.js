@@ -30,10 +30,35 @@ window.CONFIG = {
   // Einfach eine Zeile kopieren/löschen. "text" ist die Bildbeschreibung (für Screenreader).
   galerie: [
   { bild: 'images/Canada.jpeg',               text: 'Annika und Nick in Kanada' },
+  { bild: 'images/GolfLounge.jpg',            text: 'Golf Lounge' },
   { bild: 'images/Ostsee.jpg',                text: 'Ostsee' },
   { bild: 'images/Schottland.jpg',            text: 'Schottland' },
   { bild: 'images/Teneriffa.jpg',             text: 'Teneriffa' },
-  { bild: 'images/Westcoast-Halloween.jpg',   text: 'WestCoast Halloween' },
-  { bild: 'images/Canada-Tree.jpg',           text: 'Baum in Kanada' }
+  { bild: 'images/Westcoast-Halloween.jpg',   text: 'West Coast Halloween' },
+  { bild: 'images/Canada-Tree.jpg',           text: 'Baum in Kanada' },
+
+  { bild: 'images/Austria-Skiing.jpg',        text: 'Skifahren in Österreich' },
+  { bild: 'images/Canada-Cave.jpg',           text: 'Höhle in Kanada' },
+  { bild: 'images/Canada-Cox-Bay.JPG',        text: 'Cox Bay Kanada' },
+  { bild: 'images/Canada-Minigolf.jpg',       text: 'Minigolf in Kanada' },
+  { bild: 'images/Einhorn.jpg',               text: 'Einhorn' },
+  { bild: 'images/Elphi.jpg',                 text: 'Elbphilharmonie Hamburg' },
+  { bild: 'images/Festival.jpg',              text: 'Festival' },
+  { bild: 'images/Hawaii-Beer.jpg',           text: 'Hawaii Beer' },
+  { bild: 'images/Hawaii-Heli.jpg',           text: 'Helikopterflug Hawaii' },
+  { bild: 'images/Hawaii-Vulkan.jpg',         text: 'Vulkan auf Hawaii' },
+  { bild: 'images/Heide-White.jpg',           text: 'Lüneburger Heide' },
+  { bild: 'images/Lisbon.JPG',                text: 'Lissabon' },
+  { bild: 'images/Northsea-Sundowner.jpg',    text: 'Nordsee Sundowner' },
+  { bild: 'images/Otters.JPG',                text: 'Otter' },
+  { bild: 'images/Paris-Tower.jpg',           text: 'Paris' },
+  { bild: 'images/Plants.jpg',                text: 'Pflanzen' },
+  { bild: 'images/Schottland-Sahne.jpg',      text: 'Schottland Sahne' },
+  { bild: 'images/Scotland-Fairy.jpg',        text: 'Fairy Pools Schottland' },
+  { bild: 'images/SHA-Garten.jpg',            text: 'Garten' },
+  { bild: 'images/SPO.jpg',                   text: 'Sankt Peter-Ording' },
+  { bild: 'images/Sydney.JPG',                text: 'Sydney' },
+  { bild: 'images/Teneriffa-Banana.JPG',      text: 'Bananen auf Teneriffa' },
+  { bild: 'images/Xmas.jpg',                  text: 'Weihnachten' }
 ]
 };
