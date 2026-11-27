@@ -464,7 +464,12 @@ input:focus-visible{
   }
 
   .gal{
-    columns:2 160px;
+    columns:2;
+    column-gap:.6rem;
+  }
+
+  .gal a{
+    margin-bottom:.8rem;
   }
 }
 
