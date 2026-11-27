@@ -29,7 +29,11 @@ window.CONFIG = {
   // Bildergalerie: beliebig viele Einträge, Reihenfolge = Reihenfolge auf der Seite.
   // Einfach eine Zeile kopieren/löschen. "text" ist die Bildbeschreibung (für Screenreader).
   galerie: [
-    { bild: 'images/Canada.jpeg',    text: 'Annika und Nick in Kanada' },
-    { bild: 'images/GolfLounge.jpg', text: 'Golf Lounge' }
-  ]
+  { bild: 'images/Canada.jpeg',               text: 'Annika und Nick in Kanada' },
+  { bild: 'images/Ostsee.jpg',                text: 'Ostsee' },
+  { bild: 'images/Schottland.jpg',            text: 'Schottland' },
+  { bild: 'images/Teneriffa.jpg',             text: 'Teneriffa' },
+  { bild: 'images/Westcoast-Halloween.jpg',   text: 'WestCoast Halloween' },
+  { bild: 'images/Canada-Tree.jpg',           text: 'Baum in Kanada' }
+]
 };
