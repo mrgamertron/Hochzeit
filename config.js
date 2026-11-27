@@ -13,7 +13,7 @@ window.CONFIG = {
 
   hintergruende: {
     hero:         { bild: '',        abdunkeln: 0.15 }, // Startbild ganz oben
-    hochzeit:     { bild: 'images/welcome.mp4',                       abdunkeln: 0 },    // "Die Hochzeit" (sonst dunkelgrün)
+  //  hochzeit:     { bild: 'images/welcome.mp4',                       abdunkeln: 0 },    // "Die Hochzeit" (sonst dunkelgrün)
     tagesablauf:  { bild: 'images/Canada.jpeg',     abdunkeln: 0 },
 	willkommen:  { bild: '',     abdunkeln: 0.15 },
     anreise:      { bild: 'images/GolfLounge.jpg',  abdunkeln: 0.2 },
