@@ -1,4 +1,4 @@
-const PASSWORD = "DaCurls2027";
+const PASSWORD = "Schottland2026";
 
 function checkPassword() {
   const entered = document.getElementById("password").value;
